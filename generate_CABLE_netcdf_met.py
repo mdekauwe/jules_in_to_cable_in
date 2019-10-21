@@ -52,7 +52,7 @@ def main(in_fname, out_fname, lat, lon, start_year, canopy_height,
 
     # create variables
     time = f.createVariable('time', 'f8', ('time',))
-    time.units = "seconds since %s 00:00:00" % (start_year)
+    time.units = "seconds since %s-01-01 00:00:00" % (start_year)
     time.long_name = "time"
     time.calendar = "standard"
 
